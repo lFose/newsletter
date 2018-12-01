@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700');
+
+*{
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+	height: 100%;
+}
+body{
+	font-size: 1.4rem;
+	min-height: 100%;
+	line-height: 1.6;
+	background-color: #bac5db;
+	font-family: 'Lato', sans-serif;
+}
+.form{
+    margin: 0 auto;
+    max-width: 1140px;
+    text-align: center;
+    background-color: #353a45;
+    border-radius: 20px;
+    width: 660px;
+    padding: 50px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    &__img {
+    	position: absolute;
+    	left:43%;
+    	top: -10%;
+    }
+    &__title {
+    	color: #538fff;
+    	font-size: 4.8rem;
+    	margin: 10px 0;
+    	font-weight: bold;
+    }
+    &__sub-title {
+    	font-size: 2.2rem;
+    	color: #fff;
+    	margin-bottom: 40px;
+    }
+    &__input {
+    	color: #a9a9a9;
+    	outline: none;
+    	font-size: 2rem;
+    	padding:10px 20px;
+    	border-radius: 10px;
+    	width: 70%;
+    	margin-bottom: 30px;
+    	border: none;
+    	display: inline-block;
+    	vertical-align: middle;
+    	margin-right: 15px;
+    }
+    &__btn {
+    	background-color: #538fff;
+    	text-transform: uppercase;
+    	padding:14px 20px;
+    	color: #fff;
+    	border-radius: 10px;
+    	margin-bottom: 30px;
+    	border:none;
+    	font-size: 1.6rem;
+    	line-height: 1;
+    	display: inline-block;
+    	vertical-align: middle;
+    	font-weight: bold;
+    	letter-spacing: 2px;
+    	transition:all .4s ease-in;
+    	&:hover,
+    	&:focus,
+    	&:active {
+    		background-color: darken(#538fff, 15%);
+    	}
+    }
+    &__info {
+    	font-size: 2rem;
+    	color: #787d87;
+    	font-style: italic;
+    }
+    &__close-btn {
+    	position: relative;
+    	left: 54%;
+    	top: -38px;
+    	width: 32px;
+    	height: 32px;
+    	background-color: #353a45;
+    	border: none;
+    	background-image: url(../img/close.png);
+    	background-repeat: no-repeat;
+    	background-size: contain;
+    	background-position: center;
+    	transition:all .4s ease-in;
+    	&:hover,
+    	&:focus,
+    	&:active {
+    		transform: scale(1.1);
+    	}
+    }
+}
